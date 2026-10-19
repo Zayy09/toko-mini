@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message StockRequest { int32 product_id = 1; }
+message StockReply   { int32 quantity = 1; }
+message Product      { int32 id = 1; string name = 2; }
+message ProductList  { repeated Product products = 1; }
